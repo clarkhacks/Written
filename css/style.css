@@ -1,0 +1,145 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  line-height: 1.4;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins, freight-text-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 80%;
+  display: block;
+  max-width: 20rem;
+}
+img.center {
+  width: 80%;
+  margin: auto;
+}
+
+div.page-container {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  height: 100%;
+}
+div.page-container div.entry-content {
+  height: 100%;
+  max-width: 80rem;
+  margin: 0px auto;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+div.page-container a {
+  color: #57ad68;
+  text-decoration: none;
+  line-height: 35px;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+div.page-container a:hover {
+  text-decoration: none;
+}
+div.page-container pre {
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+table tr {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+table th, table td {
+  padding: 0.625em;
+  text-align: center;
+}
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+.toolbar {
+  text-align: left;
+  padding-left: 10%;
+  margin: 1rem;
+  background-color: #efefef;
+}
+.toolbar button.tool {
+  margin: 0.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.4rem;
+  border: none;
+}
+
+.touching {
+  margin: 0 !important;
+}
+
+#uploadImage {
+  display: none;
+}

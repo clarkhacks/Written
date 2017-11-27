@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>IN DEV Local Host Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Poppins'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="page-container">
+  <input id="uploadImage" type="file" onchange="encodeImageFileAsURL(this)"/>
+  <div class="title-container">
+    <h1 contenteditable="true" onkeyup="titleReplace()" onkeydown="titleReplace()" id="docTitle">Document Title</h1>
+  </div>
+  <div class="toolbar">
+    <button class="tool" onclick="saveData()" title="Save"><i class="fa fa-save"></i></button>
+    <button class="tool" onclick="deleteData()" title="Delete"><i class="fa fa-trash"></i></button>
+    <button class="tool" onclick="insertHeader()" title="Header"><i class="fa fa-header"></i></button>
+    <button class="tool" onclick="insertBold()" title="Bold"><b><i class="fa fa-bold"></i></b></button>
+    <button class="tool" onclick="insertItalic()" title="Italic"><em><i class="fa fa-italic"></i></em></button>
+    <button class="tool" onclick="insertCode()" title="Code"><i class="fa fa-code"></i></button>
+    <button class="tool" onclick="insertLink()" title="Hyperlink"><i class="fa fa-link"></i></button>
+    <button class="tool" onclick="insertImage()" title="Image"><i class="fa fa-image"></i></button>
+    <button class="tool touching" onclick="centerText()" title="Center"><i class="fa fa-align-center"></i></button>
+    <button class="tool touching" onclick="leftText()" title="Left"><i class="fa fa-align-left"></i></button>
+    <button class="tool touching" onclick="rightText()" title="Right"><i class="fa fa-align-right"></i></button>
+  </div>
+  <div class="entry-content" contenteditable="true" id="docContent">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis id ab, ipsum praesentium deserunt nulla doloremque et quasi voluptatum aperiam. Odit blanditiis illo facilis, aliquid placeat impedit quisquam alias ullam.</p>
+    <h3>Header</h3>
+    <p>div Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nulla voluptas eum ducimus enim ex id sint vero, unde quasi consequuntur at obcaecati officia veritatis animi! Magnam, non qui! Veniam! <a href="#">http://link.tld</a>.</p><img class="center" src="https://clarkhacks.com/img/logo.png" alt="Bleh"/>
+  </div>
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
